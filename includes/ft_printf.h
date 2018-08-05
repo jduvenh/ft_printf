@@ -6,7 +6,7 @@
 /*   By: jduvenh <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/03 10:56:08 by jduvenh           #+#    #+#             */
-/*   Updated: 2018/08/03 16:12:18 by jduvenh          ###   ########.fr       */
+/*   Updated: 2018/08/05 14:28:17 by jduvenh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,21 +22,8 @@ typedef struct		s_attr
 	int		width;
 }					t_attr;
 
-/*
-** @ s or s : String of characters
-** @ p      : Pointer address
-** @ D or i : Signed decimal integer
-** @ o or O : Signed octal
-** @ u or U : Unsigned decimal integer
-** @ x      : Unsigned hexadecimal integer
-** @ X      : Unsigned hexadecimal integer (capital letters)
-** @ c or C : Character
-** @ b      : Binary
-*/
-
 # define SPECIFIERS	"sSpdDioOuUxXcCb"
 # define SPECI_SIZE	(ft_strlen(SPECIFIERS))
-
 
 # define LOWER_S	(0)
 # define UPPER_S	(1)

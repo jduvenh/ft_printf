@@ -6,7 +6,7 @@
 #    By: jduvenh <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/01 11:11:55 by jduvenh           #+#    #+#              #
-#    Updated: 2018/08/02 18:37:55 by jduvenh          ###   ########.fr        #
+#    Updated: 2018/08/05 13:15:56 by jduvenh          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,17 +17,17 @@ SRC_DIR = src/
 LIB_DIR = libft/
 
 
-SRC_FILES = #ft_printf_attr.c \
-		   	ft_printf_bin.c \
-			ft_printf_hex.c \
-			ft_printf_nbr.c \
-			ft_printf_oct.c \
-			ft_printf_signed.c \
-			ft_printf_spec.c \
-			ft_printf_text.c \
-			ft_printf_unsigned.c \
+SRC_FILES = ft_print_attr.c \
+		   	ft_print_bin.c \
+			ft_print_hex.c \
+			ft_print_nbr.c \
+			ft_print_oct.c \
+			ft_print_signed.c \
+			ft_print_spec.c \
+			ft_print_text.c \
+			ft_print_unsigned.c \
 			ft_printf.c
-LIBFT_FILES = #ft_atoi.c \
+LIBFT_FILES = ft_atoi.c \
 			  ft_bzero.c \
 			  ft_isdigit.c \
 			  ft_memalloc.c \
@@ -67,7 +67,7 @@ $(NAME):
 	@gcc -c $(FLAGS) $(SRC) $(LIBFT) $(INC)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
-	@echo "libary .a created named  $(NAME) ".
+	@echo "libftprintf.a created".
 
 clean:
 	@/bin/rm -f $(OBJ)
